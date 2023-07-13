@@ -10,8 +10,16 @@
   background-color: rgba(204, 204, 204, 0.1);
 }
 
+.image-common {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
 .section-map .map-image {
   width: 1170px;
+  margin: 0 auto;
 }
 
 .section-map .link-common {
@@ -41,20 +49,17 @@
 
 @media print, (min-width: 768px) {
   .section-map .map-image-common {
-    width: 576px;
+    width: 100%;
+    margin: 0 auto;
   }
+  .wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 @media only screen and (max-width: 767.98px) {
   .section-map .map-image-common {
     width: 100%;
     margin: 0;
-  }
-  
-  .image-common {
-    display: block;
-    width: 100%;
-    height: auto;
-    object-fit: cover;
   }
 }
